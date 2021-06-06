@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Strona główna</title>
+    </head>
+    <body>
+        <p>Wpisz miasto, dla którego interesuje Cie aktualna pogoda: </p>
+        <form th:action="@{/city}" method="post">
+            <input type="text" th:name="city_name"/>
+            <input type="submit" value="Sprawdź">
+        </form>
+    </body>
+</html>
