@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <p th:text="|Informacje pogodowe dla miasta ${city}|">Miasto</p> <br>
+        <p th:text="|Temperatura: ${weather.main.temp} &#8451|">Temperatura dla danego miasta</p> <br>
+        <p th:text="|Ciśnienie: ${weather.main.pressure} HPa|">Ciśnienie dla danego miasta</p> <br>
+        <p th:text="|Wilgotność: ${weather.main.humidity} %|">Wilgotność dla danego miasta</p> <br>
+
+        <a th:href="@{/}">Powrót do strony głównej</a>
+    </body>
+</html>
